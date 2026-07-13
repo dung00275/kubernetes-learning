@@ -1,0 +1,94 @@
+site_name: Kubernetes Learning
+site_description: Personal Kubernetes learning portal with concepts, labs, cheatsheets and exams
+site_url: https://dung00275.github.io/kubernetes-learning/
+
+repo_name: kubernetes-learning
+repo_url: https://github.com/dung00275/kubernetes-learning
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - search.highlight
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Dashboard: index.md
+  - Target:
+      - Learning roadmap: target/index.md
+  - Concepts:
+      - Overview: concepts/index.md
+      - Architecture: concepts/architecture.md
+      - Pod: concepts/pod.md
+      - Deployment: concepts/deployment.md
+      - Service: concepts/service.md
+  - Cheatsheet:
+      - kubectl: cheatsheet/kubectl.md
+      - Troubleshooting: cheatsheet/troubleshooting.md
+  - Notes:
+      - Personal notes: notes/index.md
+  - Practices:
+      - Overview: practices/index.md
+      - Beginner:
+          - 01 First Pod: practices/beginner/01-first-pod.md
+          - 02 Deployment and Scale: practices/beginner/02-deployment.md
+          - 03 Service Networking: practices/beginner/03-service.md
+      - Troubleshooting:
+          - 01 CrashLoopBackOff: practices/troubleshooting/01-crashloop.md
+  - Exam:
+      - Beginner exam: exams/beginner.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/progress.js
+  - assets/javascripts/quiz.js
+
+copyright: Personal Kubernetes Learning Portal

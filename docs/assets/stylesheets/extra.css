@@ -1,0 +1,59 @@
+.hero {
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  background: linear-gradient(135deg, rgba(63,81,181,.12), rgba(33,150,243,.08));
+  margin-bottom: 1.5rem;
+}
+
+.progress-card {
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .6rem;
+}
+
+.progress-track {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--md-default-fg-color--lightest);
+  margin-top: .8rem;
+}
+
+#global-progress-bar {
+  width: 0;
+  height: 100%;
+  background: var(--md-accent-fg-color);
+  transition: width .25s ease;
+}
+
+.practice-complete,
+.quiz-submit {
+  border: 0;
+  border-radius: .35rem;
+  padding: .65rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--md-primary-fg-color);
+  color: white;
+}
+
+.practice-complete.completed {
+  background: #2e7d32;
+}
+
+.quiz-question {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .5rem;
+}
+
+.quiz-question label {
+  display: block;
+  margin: .4rem 0;
+}
+
+.quiz-result {
+  font-weight: 700;
+  margin-top: 1rem;
+}
