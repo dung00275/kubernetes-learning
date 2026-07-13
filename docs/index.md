@@ -21,18 +21,20 @@ Complete the first three beginner labs:
 
 ## Learning route
 
-```mermaid
-flowchart LR
-    A[Container basics] --> B[Pod]
-    B --> C[Deployment]
-    C --> D[Service]
-    D --> E[ConfigMap and Secret]
-    E --> F[Storage]
-    F --> G[Ingress]
-    G --> H[RBAC]
-    H --> I[Troubleshooting]
-    I --> J[Production project]
-```
+<div class="route-diagram" aria-label="Kubernetes learning route">
+  <ol class="route-steps">
+    <li style="--step: 0"><span class="route-dot"></span><span>Container basics</span></li>
+    <li style="--step: 1"><span class="route-dot"></span><span>Pod</span></li>
+    <li style="--step: 2"><span class="route-dot"></span><span>Deployment</span></li>
+    <li style="--step: 3"><span class="route-dot"></span><span>Service</span></li>
+    <li style="--step: 4"><span class="route-dot"></span><span>ConfigMap and Secret</span></li>
+    <li style="--step: 5"><span class="route-dot"></span><span>Storage</span></li>
+    <li style="--step: 6"><span class="route-dot"></span><span>Ingress</span></li>
+    <li style="--step: 7"><span class="route-dot"></span><span>RBAC</span></li>
+    <li style="--step: 8"><span class="route-dot"></span><span>Troubleshooting</span></li>
+    <li style="--step: 9"><span class="route-dot"></span><span>Production project</span></li>
+  </ol>
+</div>
 
 ## How to use this portal
 
